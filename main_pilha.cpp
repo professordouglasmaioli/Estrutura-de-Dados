@@ -14,6 +14,7 @@ int main(){
         cout << "Digite 1 para inserir um elemento!\n";
         cout << "Digite 2 para remover um elemento!\n";
         cout << "Digite 3 para imprimir a pilha!\n";
+        cout << "Digite 4 para ver a quantidade de elementos da pilha " << endl;
         cin >> opcao;
         if (opcao == 1){
             cout << "Digite o elemento a ser inserido:\n";
@@ -24,6 +25,9 @@ int main(){
             cout << "Elemento Removido: " << item << endl;
         } else if (opcao == 3){
             pilha1.imprimir();
+        } else if (opcao == 4)
+        {
+            cout << "A pilha tem " << pilha1.tamanho() << " elementos" << endl;
         }
 
     } while(opcao != 0);
